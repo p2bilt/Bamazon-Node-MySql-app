@@ -39,12 +39,26 @@ function selectProduct(results) {
         .prompt([{
                 name: "item",
                 type: "input",
-                message: "What product would you like to buy? Use the ID number to choose:"
+                message: "What product would you like to buy? Use the ID number to choose:",
+                validate: function(str) {
+
+            //          validate user input
+            var regEx = new RegExp('^[0-9]+$');
+            return regEx.test(str);
+
+        }
             },
             {
                 name: "quantity",
                 type: "input",
-                message: "How many would you like to purchase?"
+                message: "How many would you like to purchase?",
+                validate: function(str) {
+
+            //          validate user input
+            var regEx = new RegExp('^[0-9]+$');
+            return regEx.test(str);
+
+        }
             }
         ])
         .then(function(answer) {
