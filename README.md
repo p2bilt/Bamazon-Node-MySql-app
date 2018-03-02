@@ -1,5 +1,5 @@
 # Bamazon
-An command line storefront app - using MySQL, Inquirer, EasyTable, JS and Node
+A command line storefront app using MySQL, Inquirer, EasyTable, JS and Node
 
 ### Synopsis
 ***
